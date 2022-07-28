@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d16ed5aeb3e0994b9d9a0d94e57c278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstChunkSpawnPosition: 5
-  _chunkOnScreen: 5
+  firstChunkSpawnPosition: 10
+  _chunkOnScreen: 10
   _despawnDistance: 5
   chunkPrefab:
   - {fileID: 4198407788702189394, guid: f139945eb948acc488eadc559d6d3aed, type: 3}
@@ -186,11 +186,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae8a02c7055aaf4090751ed78a712c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstChunkSpawnPosition: 5
-  _chunkOnScreen: 5
+  firstChunkSpawnPosition: 10
+  _chunkOnScreen: 10
   _despawnDistance: 5
   chunkPrefab:
   - {fileID: 7382039677096489427, guid: 73a49ebb19098a7448212ac92399dcbd, type: 3}
+  - {fileID: 3177884445100359778, guid: cee3b3cfb41a79948bfc9e4af7a70654, type: 3}
   cameraTransform: {fileID: 1978943559}
 --- !u!1 &1055425973
 GameObject:
@@ -279,7 +280,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055425973}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -0.94, y: 4.57, z: 1.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
