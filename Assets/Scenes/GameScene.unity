@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1052831300}
   - component: {fileID: 1052831299}
   - component: {fileID: 1052831301}
+  - component: {fileID: 1052831302}
   m_Layer: 0
   m_Name: WorldGeneration
   m_TagString: Untagged
@@ -155,7 +156,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstChunkSpawnPosition: 10
   _chunkOnScreen: 10
-  _despawnDistance: 5
   chunkPrefab:
   - {fileID: 4198407788702189394, guid: f139945eb948acc488eadc559d6d3aed, type: 3}
   - {fileID: 4561030788958327010, guid: e28d7e727e37ff44cb20ccdbf5a67139, type: 3}
@@ -188,10 +188,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstChunkSpawnPosition: 10
   _chunkOnScreen: 10
-  _despawnDistance: 5
   chunkPrefab:
   - {fileID: 7382039677096489427, guid: 73a49ebb19098a7448212ac92399dcbd, type: 3}
   - {fileID: 3177884445100359778, guid: cee3b3cfb41a79948bfc9e4af7a70654, type: 3}
+  cameraTransform: {fileID: 1978943559}
+--- !u!114 &1052831302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052831298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c31354093faf449849e1e1924b9188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstChunkSpawnPosition: 5
+  _chunkOnScreen: 20
+  chunkPrefab:
+  - {fileID: 3018480892775512215, guid: 254d735f8bd090a4b8d3130cf5d559eb, type: 3}
   cameraTransform: {fileID: 1978943559}
 --- !u!1 &1055425973
 GameObject:
@@ -397,7 +413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978943555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.06, y: 3.23, z: -19.85}
+  m_LocalPosition: {x: 0, y: 0, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

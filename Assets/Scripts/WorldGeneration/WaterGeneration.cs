@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorldGeneration : MonoBehaviour
+public class WaterGeneration : MonoBehaviour
 {   //Gameplay
     private float _chunkSpawnZ;
     private Queue<Chunk> _activeChunks = new Queue<Chunk>();
@@ -21,7 +21,7 @@ public class WorldGeneration : MonoBehaviour
     }
     void Start()
     {   //check if we have an empty chankPrefab list
-        if (chunkPrefab.Count==0)
+        if (chunkPrefab.Count == 0)
         {
             Debug.LogError("No chank prefab found on the world generator");
             return;
@@ -35,7 +35,7 @@ public class WorldGeneration : MonoBehaviour
             Debug.LogError("We've assigned cameraTransform automatially to the main camera");
         }
         ResetWorld();
-    
+
     }
     public void Update()
     {
@@ -48,7 +48,7 @@ public class WorldGeneration : MonoBehaviour
 
         Chunk lastChank = _activeChunks.Peek();
 
-        if (cameraZ>=(lastChank.transform.position.z+lastChank._chunkLenght))
+        if (cameraZ >= (lastChank.transform.position.z + lastChank._chunkLenght))
         {
             SpawnNewChunk();
             DeleteLastChunk();
@@ -58,7 +58,7 @@ public class WorldGeneration : MonoBehaviour
     {
         int randomIndex = Random.Range(0, chunkPrefab.Count);
 
-        Chunk chunk =_chunkPool.Find(x=>!x.gameObject.activeSelf && x.name==(chunkPrefab[randomIndex].name+"(Clone)"));
+        Chunk chunk = _chunkPool.Find(x => !x.gameObject.activeSelf && x.name == (chunkPrefab[randomIndex].name + "(Clone)"));
 
         if (!chunk)
         {
