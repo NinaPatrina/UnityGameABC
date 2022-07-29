@@ -1,21 +1,20 @@
+
 using UnityEngine;
 
-public class FallingState : BaseState
+public class WalkingState : BaseState
 {
     public override void Construct()
     {
-        motor.anim?.SetTrigger("Fall");
+        motor.verticalVelocity = 0;
     }
     public override Vector3 ProcessMotion()
     {
-        motor.ApplyGravity();
-
         Vector3 m = Vector3.zero;
-
         m.x = motor.SnapToLane();
-        m.y = motor.verticalVelocity;
+        m.y = -1.0f;
         m.z = motor.baseRunSpeed;
         return m;
+
     }
     public override void Transition()
     {
@@ -27,8 +26,12 @@ public class FallingState : BaseState
         {
             motor.ChangeLane(1);
         }
-        //I do not need this because he will walk when speed>1
-        if (motor.isGrounded)
-            motor.ChangeState(GetComponent<WalkingState>());
+        if (InputManager.Instance.SwipeUp && motor.isGrounded)
+        {
+            motor.ChangeState(GetComponent<JumpingState>());
+        }
+        if (!motor.isGrounded)
+            motor.ChangeState(GetComponent<FallingState>());
+       
     }
 }

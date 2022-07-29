@@ -11,7 +11,7 @@ public class PlayerMotor : MonoBehaviour
     public float distanceInBetweenLanes = 3.0f;
     public float baseRunSpeed = 2.0f;
     public float baseSideWaySpeed = 10.0f;
-    public float gravity = 14.0f;
+    public float gravity = 1.0f;
     public float terminalVelocity = 20.0f;
 
     public CharacterController controller;
@@ -23,20 +23,22 @@ public class PlayerMotor : MonoBehaviour
 
     private void Start()
     {
-        //controller = GetComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
         
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
 
         //state = GetComponent<IdleState>();
+        // !!! i changed to walking because Idle is not implemented yet
+        state = GetComponent<WalkingState>();
         //state.Construct();
         //isPaused = true;
 
-}
+    }
 
     private void Update()
     {
         //if (!isPaused)
-            //UpdateMotor();
+        UpdateMotor();
     }
 
     private void UpdateMotor()
@@ -52,8 +54,8 @@ public class PlayerMotor : MonoBehaviour
         state.Transition();
         //feed the animator some values
         
-        //anim?.SetBool("IsGrounded", isGrounded);
-        //anim?.SetFloat("Speed", Mathf.Abs(moveVector.z));
+        anim?.SetBool("IsGrounded", isGrounded);
+        anim?.SetFloat("Speed", Mathf.Abs(moveVector.z));
 
         //move the player
         controller.Move(moveVector * Time.deltaTime);
@@ -89,13 +91,13 @@ public class PlayerMotor : MonoBehaviour
         state = s;
         state.Construct();
     }
-    ////public void ApplyGravity()
-    ////{
-    ////    verticalVelocity -= gravity * Time.deltaTime;
-    ////    if (verticalVelocity < -terminalVelocity)
-    ////        verticalVelocity = -terminalVelocity;
+    public void ApplyGravity()
+    {
+        verticalVelocity -= gravity * Time.deltaTime;
+        if (verticalVelocity < -terminalVelocity)
+            verticalVelocity = -terminalVelocity;
 
-    ////}
+    }
     ////public void PausePlayer()
     ////{
     ////    isPaused = true;
@@ -104,17 +106,17 @@ public class PlayerMotor : MonoBehaviour
     ////{
     ////    isPaused = false;
     ////}
-    ////public void RespawnPlayer()
-    ////{
-    ////    //ChangeState(GetComponent<RespawnState>());
-    ////    //GameManager.Instance.ChangeCamera(GameCamera.Respawn);
-    ////}
+    public void RespawnPlayer()
+    {
+        //ChangeState(GetComponent<RespawnState>());
+        //GameManager.Instance.ChangeCamera(GameCamera.Respawn);
+    }
     ////public void ResetPlayer()
     ////{
     ////    currentLane = 0;
     ////    transform.position = Vector3.zero;
     ////    anim?.SetTrigger("Idle");
-    ////    ChangeState(GetComponent<SwimmingState>());
+    ////    ChangeState(GetComponent<WalkingState>());
     ////    PausePlayer();
     ////}
     ////public void OnControllerColliderHit(ControllerColliderHit hit)

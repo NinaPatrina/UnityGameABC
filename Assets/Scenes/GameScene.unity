@@ -147,24 +147,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!143 &556382052
-CharacterController:
+--- !u!114 &556382052
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556382050}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 1.2
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.7, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7d2315ed4a5404e87a1819bd26507d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &556382053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,13 +180,56 @@ MonoBehaviour:
   baseSideWaySpeed: 10
   gravity: 14
   terminalVelocity: 20
-  controller: {fileID: 556382052}
+  controller: {fileID: 556382057}
   anim: {fileID: 556382051}
 --- !u!4 &556382054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
   m_PrefabInstance: {fileID: 1587326433}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &556382055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556382050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a1c46ee91fcc842960a6cf3b3d00df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &556382056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556382050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4951db810187c97469e5082435d38fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 7
+--- !u!143 &556382057
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556382050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1.7
+  m_Radius: 1
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.7, z: 0}
 --- !u!1 &720719340
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -599,10 +636,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978943555}
-  m_LocalRotation: {x: 0.017810827, y: -0.9820545, z: 0.1407191, w: -0.12429845}
-  m_LocalPosition: {x: -0.5400005, y: 1.72, z: 7.1800184}
-  m_LocalScale: {x: 0.1333333, y: 0.13333336, z: 0.13333327}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.99, z: -4.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 556382054}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 15.781, y: -105.005, z: -4.169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

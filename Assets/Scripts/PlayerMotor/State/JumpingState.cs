@@ -12,7 +12,7 @@ public class JumpingState : BaseState
     public override Vector3 ProcessMotion()
     {
         //Apply gravity
-        //motor.ApplyGravity();
+        motor.ApplyGravity();
         //Create our return vector
 
         Vector3 m = Vector3.zero;
