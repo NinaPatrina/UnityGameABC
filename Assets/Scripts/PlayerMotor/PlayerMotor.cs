@@ -15,7 +15,7 @@ public class PlayerMotor : MonoBehaviour
     public float terminalVelocity = 20.0f;
 
     public CharacterController controller;
-    //public Animator anim;
+    public Animator anim;
     //public AudioClip hitSound;
 
     private BaseState state;
@@ -23,12 +23,12 @@ public class PlayerMotor : MonoBehaviour
 
     private void Start()
     {
-        controller = GetComponent<CharacterController>();
+        //controller = GetComponent<CharacterController>();
         
         //anim = GetComponent<Animator>();
 
-        state = GetComponent<SwimmingState>();
-        state.Construct();
+        //state = GetComponent<IdleState>();
+        //state.Construct();
         //isPaused = true;
 
 }
@@ -36,7 +36,7 @@ public class PlayerMotor : MonoBehaviour
     private void Update()
     {
         //if (!isPaused)
-            UpdateMotor();
+            //UpdateMotor();
     }
 
     private void UpdateMotor()
