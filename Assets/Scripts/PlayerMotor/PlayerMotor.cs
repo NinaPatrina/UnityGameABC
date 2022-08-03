@@ -19,7 +19,7 @@ public class PlayerMotor : MonoBehaviour
     //public AudioClip hitSound;
 
     private BaseState state;
-    //private bool isPaused;
+    private bool isPaused;
 
     private void Start()
     {
@@ -31,13 +31,13 @@ public class PlayerMotor : MonoBehaviour
         // !!! i changed to walking because Idle is not implemented yet
         state = GetComponent<WalkingState>();
         //state.Construct();
-        //isPaused = true;
+        isPaused = true;
 
     }
 
     private void Update()
     {
-        //if (!isPaused)
+        if (!isPaused)
         UpdateMotor();
     }
 
@@ -98,14 +98,14 @@ public class PlayerMotor : MonoBehaviour
             verticalVelocity = -terminalVelocity;
 
     }
-    ////public void PausePlayer()
-    ////{
-    ////    isPaused = true;
-    ////}
-    ////public void ResumePlayer()
-    ////{
-    ////    isPaused = false;
-    ////}
+    public void PausePlayer()
+    {
+        isPaused = true;
+    }
+    public void ResumePlayer()
+    {
+        isPaused = false;
+    }
     public void RespawnPlayer()
     {
         //ChangeState(GetComponent<RespawnState>());
