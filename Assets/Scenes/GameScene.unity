@@ -261,10 +261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481a95e60be416e458f3560bffd76589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuUI: {fileID: 0}
-  hiscoreText: {fileID: 0}
-  fishcountText: {fileID: 0}
-  menuLoopMusic: {fileID: 0}
 --- !u!114 &629603011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,6 +277,9 @@ MonoBehaviour:
   worldGeneration: {fileID: 1052831299}
   sceneChunkGeneration: {fileID: 1052831301}
   cameras:
+  - {fileID: 1978943555}
+  - {fileID: 1978943555}
+  - {fileID: 1978943555}
   - {fileID: 1978943555}
 --- !u!4 &629603012
 Transform:
@@ -308,10 +307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b75936bf86bb154b8c89766de0a6225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameUI: {fileID: 0}
-  fishCount: {fileID: 0}
-  scoreCount: {fileID: 0}
-  gameLoopMusic: {fileID: 0}
 --- !u!1 &656114094 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: eb64ea2dad3369040b592d89c13b404a, type: 3}
@@ -576,7 +571,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: eb64ea2dad3369040b592d89c13b404a, type: 3}
       propertyPath: m_Name
-      value: Plane_00
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: eb64ea2dad3369040b592d89c13b404a, type: 3}
       propertyPath: m_Layer
