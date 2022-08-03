@@ -27,7 +27,6 @@ public class FallingState : BaseState
         {
             motor.ChangeLane(1);
         }
-        //I do not need this because he will walk when speed>1
         if (motor.isGrounded)
             motor.ChangeState(GetComponent<WalkingState>());
     }
