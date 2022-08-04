@@ -176,7 +176,7 @@ MonoBehaviour:
   isGrounded: 0
   currentLane: 0
   distanceInBetweenLanes: 3
-  baseRunSpeed: 1
+  baseRunSpeed: 0.5
   baseSideWaySpeed: 1
   gravity: 14
   terminalVelocity: 20
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4951db810187c97469e5082435d38fbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 7
+  jumpForce: 2
 --- !u!143 &556382057
 CharacterController:
   m_ObjectHideFlags: 0
@@ -658,6 +658,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crocodile
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 100098, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -684,7 +692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.701
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -724,6 +732,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400098, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
       propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400098, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
