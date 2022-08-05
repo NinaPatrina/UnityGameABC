@@ -9,7 +9,10 @@ public class WalkingState : BaseState
     }
     public override Vector3 ProcessMotion()
     {
+        motor.ApplyGravity();
+
         Vector3 m = Vector3.zero;
+
         m.x = motor.SnapToLane();
         m.y = -1.0f;
         m.z = motor.baseRunSpeed;
