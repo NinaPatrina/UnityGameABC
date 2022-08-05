@@ -325,7 +325,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 556382054}
-  material: {fileID: 2100000, guid: 595e799fef5428048a130a5fd5ea0d8e, type: 2}
 --- !u!65 &656114096
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -338,7 +337,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 69.04828, y: 0, z: 69.04828}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -1.5, z: 0}
 --- !u!1 &720719340
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +449,9 @@ MonoBehaviour:
   _chunkOnScreen: 10
   chunkPrefab:
   - {fileID: 7382039677096489427, guid: 73a49ebb19098a7448212ac92399dcbd, type: 3}
+  - {fileID: 3679273438355688711, guid: ec8dad727809da8499b352952cef7c32, type: 3}
   - {fileID: 3177884445100359778, guid: cee3b3cfb41a79948bfc9e4af7a70654, type: 3}
+  - {fileID: 2617883613647803191, guid: e501c1b005233c34c8579d5d25fd78e4, type: 3}
   cameraTransform: {fileID: 1978943559}
 --- !u!114 &1052831302
 MonoBehaviour:
@@ -599,7 +600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eb64ea2dad3369040b592d89c13b404a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eb64ea2dad3369040b592d89c13b404a, type: 3}
       propertyPath: m_LocalPosition.z

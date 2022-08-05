@@ -128,7 +128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
       propertyPath: m_RootOrder
@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
       propertyPath: m_RenderingLayerMask
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -200,11 +200,42 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 595e799fef5428048a130a5fd5ea0d8e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
+--- !u!1 &1793271539331968227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
+  m_PrefabInstance: {fileID: 1793271539331934787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1793271539332067523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
   m_PrefabInstance: {fileID: 1793271539331934787}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &6141996732424540630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793271539331968227}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 50.000328, y: 1.4089452, z: 12.652807}
+  m_Center: {x: -0.00015974045, y: 0.61342365, z: -18.676346}
+--- !u!65 &2972009436442491394
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793271539331968227}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 50.000328, y: 1.3908552, z: 7.427459}
+  m_Center: {x: -0.00015974045, y: 0.6043833, z: 21.03896}
 --- !u!1001 &2967584395280870606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -280,7 +311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
       propertyPath: m_RootOrder
@@ -344,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
       propertyPath: m_RenderingLayerMask
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -352,11 +383,27 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 595e799fef5428048a130a5fd5ea0d8e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
+--- !u!1 &3125750863645280977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
+  m_PrefabInstance: {fileID: 3125750863645314161}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3125750863645447921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 77e9238cb6a7b874abdbdabd2ee2b319, type: 3}
   m_PrefabInstance: {fileID: 3125750863645314161}
   m_PrefabAsset: {fileID: 0}
+--- !u!154 &4529641628768481659
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3125750863645280977}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 0}
+  m_EnableTreeColliders: 1
 --- !u!1001 &4677601390155966054
 PrefabInstance:
   m_ObjectHideFlags: 0
