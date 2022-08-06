@@ -108,25 +108,25 @@ public class PlayerMotor : MonoBehaviour
     }
     public void RespawnPlayer()
     {
-        //ChangeState(GetComponent<RespawnState>());
+        ChangeState(GetComponent<RespawnState>());
         //GameManager.Instance.ChangeCamera(GameCamera.Respawn);
     }
-    ////public void ResetPlayer()
-    ////{
-    ////    currentLane = 0;
-    ////    transform.position = Vector3.zero;
-    ////    anim?.SetTrigger("Idle");
-    ////    ChangeState(GetComponent<WalkingState>());
-    ////    PausePlayer();
-    ////}
-    ////public void OnControllerColliderHit(ControllerColliderHit hit)
-    ////{
-    ////    string hitLayerName = LayerMask.LayerToName(hit.gameObject.layer);
-    ////    if (hitLayerName == "Death")
-    ////    {
-    ////        //AudioManager.Instance.PlaySFX(hitSound, 0.7f);
+    //public void ResetPlayer()
+    //{
+    //    currentLane = 0;
+    //    transform.position = Vector3.zero;
+    //    anim?.SetTrigger("Idle");
+    //    ChangeState(GetComponent<WalkingState>());
+    //    PausePlayer();
+    //}
+    public void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        string hitLayerName = LayerMask.LayerToName(hit.gameObject.layer);
+        if (hitLayerName == "Death")
+        {
+            //AudioManager.Instance.PlaySFX(hitSound, 0.7f);
 
-    ////        //ChangeState(GetComponent<DeathState>());
-    ////    }
-    ////}
+            ChangeState(GetComponent<DeathState>());
+        }
+    }
 }
