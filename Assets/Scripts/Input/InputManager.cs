@@ -112,7 +112,6 @@ public class InputManager : MonoBehaviour
     {
         tap = true;
     }
-
     public void OnEnable()
     {
         actionSheme.Enable();
@@ -121,5 +120,4 @@ public class InputManager : MonoBehaviour
     {
         actionSheme.Disable();
     }
-
 }

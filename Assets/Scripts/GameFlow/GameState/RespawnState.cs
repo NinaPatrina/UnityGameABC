@@ -5,11 +5,12 @@ public class RespawnState : BaseState
     [SerializeField]  private float immunityTime = 1f;
 
     private float startTime;
+
     public override void Construct()
     {
         startTime = Time.time;
         motor.controller.enabled = false;
-        motor.transform.position = new UnityEngine.Vector3(0, verticalDistance, motor.transform.position.z)  ;
+        motor.transform.position = new UnityEngine.Vector3(0, verticalDistance, motor.transform.position.z);
         motor.controller.enabled = true;
 
         motor.verticalVelocity = 0.0f;

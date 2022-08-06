@@ -16,6 +16,8 @@ public class GameStateGame : GameState
         GameManager.Instance.motor.ResumePlayer();
         GameManager.Instance.ChangeCamera(GameCamera.Game);
 
+
+
         //GameStat.Instance.OnCollectFish+= OnCollectFish;
         //GameStat.Instance.OnScoreChange += OnScoreChange;
 

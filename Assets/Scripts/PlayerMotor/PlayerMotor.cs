@@ -109,16 +109,16 @@ public class PlayerMotor : MonoBehaviour
     public void RespawnPlayer()
     {
         ChangeState(GetComponent<RespawnState>());
-        //GameManager.Instance.ChangeCamera(GameCamera.Respawn);
+        GameManager.Instance.ChangeCamera(GameCamera.Respawn);
     }
-    //public void ResetPlayer()
-    //{
-    //    currentLane = 0;
-    //    transform.position = Vector3.zero;
-    //    anim?.SetTrigger("Idle");
-    //    ChangeState(GetComponent<WalkingState>());
-    //    PausePlayer();
-    //}
+    public void ResetPlayer()
+    {
+        currentLane = 0;
+        transform.position = Vector3.zero;
+        anim?.SetTrigger("Idle");
+        ChangeState(GetComponent<WalkingState>());
+        PausePlayer();
+    }
     public void OnControllerColliderHit(ControllerColliderHit hit)
     {
         string hitLayerName = LayerMask.LayerToName(hit.gameObject.layer);
