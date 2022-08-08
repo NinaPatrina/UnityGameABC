@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DeathState : BaseState
 {
-    [SerializeField] private Vector3 knockbackForce = new Vector3(0, 4, -3);
+    [SerializeField] private Vector3 knockbackForce = new Vector3(0, 7, -3);
     private Vector3 currentKnockBack;
     public override void Construct()
     {
@@ -11,14 +11,23 @@ public class DeathState : BaseState
     }
     public override Vector3 ProcessMotion()
     {
-        Vector3 m = currentKnockBack;
-        currentKnockBack = new Vector3(
+            Vector3 m = currentKnockBack;
+            currentKnockBack = new Vector3(
+
             0,
+
             currentKnockBack.y -= motor.gravity * Time.deltaTime,
+           
             currentKnockBack.z += 2.0f*Time.deltaTime);
-        if (currentKnockBack.z > 0)
-        {
+
+            Debug.Log(currentKnockBack.z);
+
+            if (currentKnockBack.z > 0)
+
+            {
             currentKnockBack.z = 0;
+            currentKnockBack.y = 2;
+                       
             GameManager.Instance.ChangeState(GameManager.Instance.GetComponent<GameStateDeath>());
 
         }

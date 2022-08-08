@@ -16,6 +16,7 @@ public class GameStateDeath : GameState
 
     public override void Construct()
     {
+
         GameManager.Instance.motor.PausePlayer();
         //deathUI.SetActive(true);
         deathTime = Time.time;
@@ -37,6 +38,14 @@ public class GameStateDeath : GameState
         //currentScore.text = GameStat.Instance.ScoreToText();
         //fishTotal.text ="Total fish: " + SaveManager.Instance.save.Fish;
         //currentFish.text = GameStat.Instance.FishToText();
+
+
+        //!!!!!!!!!
+        ResumeGame();
+//!!!!!1!1!!!!!!!!!!1
+
+
+
     }
     public override void Destruct()
     {

@@ -8,7 +8,7 @@ public class PlayerMotor : MonoBehaviour
     [HideInInspector] public bool isGrounded;
     [HideInInspector] public int currentLane;
 
-    public float distanceInBetweenLanes = 3.0f;
+    public float distanceInBetweenLanes = 5.0f;
     public float baseRunSpeed = 2.0f;
     public float baseSideWaySpeed = 10.0f;
     public float gravity = 1.0f;
