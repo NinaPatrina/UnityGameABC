@@ -13,26 +13,19 @@ public class DeathState : BaseState
     {
             Vector3 m = currentKnockBack;
             currentKnockBack = new Vector3(
-
             0,
-
             currentKnockBack.y -= motor.gravity * Time.deltaTime,
-           
             currentKnockBack.z += 2.0f*Time.deltaTime);
-
-            Debug.Log(currentKnockBack.z);
 
             if (currentKnockBack.z > 0)
 
             {
             currentKnockBack.z = 0;
-            currentKnockBack.y = 2;
-                       
+            
+            GameManager.Instance.ChangeCamera(GameCamera.Sleep);
             GameManager.Instance.ChangeState(GameManager.Instance.GetComponent<GameStateDeath>());
-
-        }
-
-        return currentKnockBack;
+            }
+            return currentKnockBack;
     }
 
 }

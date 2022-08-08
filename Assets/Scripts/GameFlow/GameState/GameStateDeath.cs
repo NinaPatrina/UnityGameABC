@@ -17,6 +17,8 @@ public class GameStateDeath : GameState
     public override void Construct()
     {
 
+        MovePlayerUp();
+
         GameManager.Instance.motor.PausePlayer();
         //deathUI.SetActive(true);
         deathTime = Time.time;
@@ -41,12 +43,20 @@ public class GameStateDeath : GameState
 
 
         //!!!!!!!!!
-        ResumeGame();
+        //ResumeGame();
 //!!!!!1!1!!!!!!!!!!1
 
 
 
     }
+
+    public void MovePlayerUp()
+    {
+        CharacterController controller = GameManager.Instance.motor.GetComponent<CharacterController>();
+        Vector3 m = new Vector3(0,0.3f,0);
+        controller.Move(m);
+    }
+
     public override void Destruct()
     {
         //deathUI.SetActive(false);
