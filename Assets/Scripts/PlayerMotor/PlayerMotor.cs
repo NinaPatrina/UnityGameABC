@@ -1,4 +1,5 @@
 
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMotor : MonoBehaviour
@@ -128,5 +129,37 @@ public class PlayerMotor : MonoBehaviour
 
             ChangeState(GetComponent<DeathState>());
         }
+    }
+
+
+
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Letter")
+        {
+            PickupLetter();
+        }
+    }
+    private void PickupLetter()
+    {
+        PausePlayer();
+        anim?.SetTrigger("Success");
+        GameManager.Instance.ChangeCamera(GameCamera.Success);
+
+        //after 3 sec
+        StartCoroutine(MyCoroutine());
+        //GameStat.Instance.CollectFish();
+
+        //play sound  
+
+    }
+
+    private IEnumerator MyCoroutine()
+    {
+        yield return new WaitForSeconds(6f);
+        GameManager.Instance.ChangeCamera(GameCamera.Game);
+        ResumePlayer();
     }
 }

@@ -53,7 +53,7 @@ public class GameStateDeath : GameState
     public void MovePlayerUp()
     {
         CharacterController controller = GameManager.Instance.motor.GetComponent<CharacterController>();
-        Vector3 m = new Vector3(0,0.2f,0);
+        Vector3 m = new Vector3(0,0.22f,0);
         controller.Move(m);
     }
 

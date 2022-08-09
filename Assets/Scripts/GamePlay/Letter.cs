@@ -13,27 +13,29 @@ public class Letter : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag =="Player")
+        if (other.tag == "Player")
         {
-            
             PickupLetter();
-
         }
-
     }
     private void PickupLetter()
     {
-        anim?.SetTrigger("Pickup");
+        StartCoroutine(MyCoroutine());
         
+
         //GameStat.Instance.CollectFish();
 
-        //play sound
-        //trigger an animation
-
+        //play sound  
     }
+    private IEnumerator MyCoroutine()
+    {
+        yield return new WaitForSeconds(4.5f);
+        
+        anim?.SetTrigger("Pickup");
+        
+}
     public void OnShowChunk()
     {
-        anim?.SetTrigger("Walk");
-        
+        anim?.SetTrigger("Walk");  
     }
 }

@@ -6,7 +6,8 @@ public enum GameCamera
     Game = 1,
     Shop = 2,
     Respawn = 3,
-    Sleep =4
+    Sleep =4,
+    Success =5
 }
 
 public class GameManager : MonoBehaviour
