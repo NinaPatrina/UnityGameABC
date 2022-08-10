@@ -29,7 +29,7 @@ public class Letter : MonoBehaviour
     }
     private IEnumerator MyCoroutine()
     {
-        yield return new WaitForSeconds(4.5f);
+        yield return new WaitForSeconds(1.2f);
         
         anim?.SetTrigger("Pickup");
         

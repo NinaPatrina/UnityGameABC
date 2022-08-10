@@ -144,9 +144,7 @@ public class PlayerMotor : MonoBehaviour
     }
     private void PickupLetter()
     {
-        PausePlayer();
-        anim?.SetTrigger("Success");
-        GameManager.Instance.ChangeCamera(GameCamera.Success);
+        
 
         //after 3 sec
         StartCoroutine(MyCoroutine());
@@ -158,7 +156,17 @@ public class PlayerMotor : MonoBehaviour
 
     private IEnumerator MyCoroutine()
     {
-        yield return new WaitForSeconds(6f);
+        while (!isGrounded)
+        {
+            Vector3 mVector = new Vector3(0,-1f,-5f);
+            controller.Move(mVector * Time.deltaTime);
+            yield return null;
+        }
+        PausePlayer();
+        anim?.SetTrigger("Success");
+        GameManager.Instance.ChangeCamera(GameCamera.Success);
+
+        yield return new WaitForSeconds(1.8f);
         GameManager.Instance.ChangeCamera(GameCamera.Game);
         ResumePlayer();
     }

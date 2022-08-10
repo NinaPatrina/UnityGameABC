@@ -2,26 +2,8 @@ using UnityEngine;
 using TMPro;
 public class GameStateInit : GameState
 {
-
-    //!!!!! temporary
-    public override void UpdateState()
-    {
-        if (InputManager.Instance.Tap)
-            brain.ChangeState(GetComponent<GameStateGame>());
-    }
-    //!!!!!!!!
-
-
-
-
-
-
-
-
-
-    //public GameObject menuUI;
-    //[SerializeField] private TextMeshProUGUI hiscoreText;
-    //[SerializeField] private TextMeshProUGUI fishcountText;
+    public GameObject menuUI;
+    
     //[SerializeField] private AudioClip menuLoopMusic; 
     public override void Construct()
     {
@@ -30,21 +12,21 @@ public class GameStateInit : GameState
         //hiscoreText.text ="Highscoer: " + SaveManager.Instance.save.HighScore.ToString();
         //fishcountText.text = "Fish: " + SaveManager.Instance.save.Fish.ToString();
 
-        //menuUI.SetActive(true);
+        menuUI.SetActive(true);
 
         //AudioManager.Instance.PlayMusicWithXFade(menuLoopMusic, 0.5f);
     }
 
     public override void Destruct()
     {
-        //menuUI.SetActive(false);
+        menuUI.SetActive(false);
     }
     public void OnPlayClick()
     {
-       // brain.ChangeState(GetComponent<GameStateGame>());
+        brain.ChangeState(GetComponent<GameStateGame>());
         //GameStat.Instance.ResetSession();
     }
-    public void OnShopClick()
+    public void OnABCClick()
     {
         //brain.ChangeState(GetComponent<GameStateShop>());
     }

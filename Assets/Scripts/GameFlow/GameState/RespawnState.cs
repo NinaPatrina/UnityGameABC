@@ -1,8 +1,8 @@
 using UnityEngine;
 public class RespawnState : BaseState
 {
-    [SerializeField] private float verticalDistance = 25.0f;
-    [SerializeField]  private float immunityTime = 1f;
+    [SerializeField] private float verticalDistance = 3.0f;
+    [SerializeField]  private float immunityTime = 10f;
 
     private float startTime;
 
