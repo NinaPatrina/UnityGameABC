@@ -3,31 +3,32 @@ using UnityEngine;
 
 public class HatLogic : MonoBehaviour
 {
-    [SerializeField] private Transform hatContainer;
-    private List<GameObject> hatModels = new List<GameObject>();
+    [SerializeField] private Transform abcContainer;
+    private List<GameObject> abcModels = new List<GameObject>();
     private ABCShop[] abcs;
 
     private void Start()
     {
-        abcs = Resources.LoadAll<ABCShop>("Abc");
+        abcs = Resources.LoadAll<ABCShop>("ABC");
         SpawnHats();
         //SelectHats(SaveManager.Instance.save.CurrentHatIndex);
     }
     private void SpawnHats()
     {
-        //for (int i = 0; i < hats.Length; i++)
-        //{ hatModels.Add(Instantiate(hats[i].Model, hatContainer) as GameObject); }
+        for (int i = 0; i < abcs.Length; i++)
+        { abcModels.Add(Instantiate(abcs[i].Model, abcContainer) as GameObject); }
+        DisableAllHats();
 
     }
     public void DisableAllHats()
     {
-        for (int i = 0; i < hatModels.Count; i++)
-        { hatModels[i].SetActive(false); }
-    } 
+        for (int i = 0; i < abcModels.Count; i++)
+        { abcModels[i].SetActive(false); }
+    }
     public void SelectHats(int index)
     {
         DisableAllHats();
-        hatModels[index].SetActive(true); 
+        abcModels[index].SetActive(true);
 
     }
 }

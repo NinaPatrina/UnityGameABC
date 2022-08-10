@@ -28,6 +28,6 @@ public class GameStateInit : GameState
     }
     public void OnABCClick()
     {
-        //brain.ChangeState(GetComponent<GameStateShop>());
+        brain.ChangeState(GetComponent<GameStateShop>());
     }
 }
