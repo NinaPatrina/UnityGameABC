@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     private GameState state;
 
-    private void Start()
+    private void Awake()
     {
 
         instance = this;
