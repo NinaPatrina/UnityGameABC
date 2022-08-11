@@ -53,6 +53,7 @@ public class GameStateDeath : GameState
         GameManager.Instance.motor.ResetPlayer();
         GameManager.Instance.worldGeneration.ResetWorld();
         GameManager.Instance.sceneChunkGeneration.ResetWorld();
-
+        GameManager.Instance.waterGenerationon.ResetWorld();
+        
     }
 }

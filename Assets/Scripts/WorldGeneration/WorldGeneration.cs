@@ -37,10 +37,10 @@ public class WorldGeneration : MonoBehaviour
         ResetWorld();
     
     }
-    public void Update()
-    {
-        ScanPosition();
-    }
+    //public void Update()
+    //{
+    //    ScanPosition();
+    //}
 
     public void ScanPosition()
     {

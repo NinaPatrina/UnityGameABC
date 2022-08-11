@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     public WorldGeneration worldGeneration;
     public SceneChunkGeneration sceneChunkGeneration;
+    public WaterGeneration waterGenerationon;
 
     public GameObject[] cameras;
 

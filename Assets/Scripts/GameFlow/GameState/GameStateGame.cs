@@ -44,6 +44,7 @@ public class GameStateGame : GameState
     {
         GameManager.Instance.worldGeneration.ScanPosition();
         GameManager.Instance.sceneChunkGeneration.ScanPosition();
+        GameManager.Instance.waterGenerationon.ScanPosition(); 
     }
 }
 
