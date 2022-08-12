@@ -906,6 +906,7 @@ MonoBehaviour:
   terminalVelocity: 20
   controller: {fileID: 556382057}
   anim: {fileID: 556382051}
+  hitSound: {fileID: 8300000, guid: bafc520de3133aa48adb40c9aa403030, type: 3}
 --- !u!4 &556382054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}

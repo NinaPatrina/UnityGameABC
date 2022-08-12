@@ -106,6 +106,8 @@ public class PlayerMotor : MonoBehaviour
     public void ResumePlayer()
     {
         isPaused = false;
+        //anim?.SetTrigger("Walk");
+
     }
     public void RespawnPlayer()
     {

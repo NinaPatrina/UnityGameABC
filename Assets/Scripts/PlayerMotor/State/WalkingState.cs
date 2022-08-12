@@ -6,6 +6,7 @@ public class WalkingState : BaseState
     public override void Construct()
     {
         motor.verticalVelocity = 0;
+        motor.anim?.SetTrigger("Walk");
     }
     public override Vector3 ProcessMotion()
     {
