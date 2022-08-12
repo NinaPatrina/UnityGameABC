@@ -4,7 +4,7 @@ public class GameStateInit : GameState
 {
     public GameObject menuUI;
     
-    //[SerializeField] private AudioClip menuLoopMusic; 
+    [SerializeField] private AudioClip menuLoopMusic; 
     public override void Construct()
     {
         
@@ -14,7 +14,7 @@ public class GameStateInit : GameState
 
         menuUI.SetActive(true);
 
-        //AudioManager.Instance.PlayMusicWithXFade(menuLoopMusic, 0.5f);
+        AudioManager.Instance.PlayMusicWithXFade(menuLoopMusic, 0.5f);
     }
 
     public override void Destruct()

@@ -6,7 +6,7 @@ public class GameStateGame : GameState
     //public GameObject gameUI;
     //[SerializeField] private TextMeshProUGUI fishCount;
     //[SerializeField] private TextMeshProUGUI scoreCount;
-    //[SerializeField] private AudioClip gameLoopMusic;
+    [SerializeField] private AudioClip gameLoopMusic;
 
 
 
@@ -23,7 +23,7 @@ public class GameStateGame : GameState
 
         //gameUI.SetActive(true);
 
-        //AudioManager.Instance.PlayMusicWithXFade(gameLoopMusic, 0.5f);
+        AudioManager.Instance.PlayMusicWithXFade(gameLoopMusic, 0.5f);
     }
     private void OnCollectFish(int amnCollected)
     {

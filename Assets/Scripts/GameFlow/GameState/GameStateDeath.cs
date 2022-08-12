@@ -4,7 +4,9 @@ using TMPro;
 public class GameStateDeath : GameState
 {
     public GameObject deathUI;
-    
+
+    [SerializeField] private AudioClip gameSleepMusic;
+
     [SerializeField] private Image completionCircle;
 
     public float timeToDecision = 5.5f;
@@ -18,6 +20,8 @@ public class GameStateDeath : GameState
         deathUI.SetActive(true);
         deathTime = Time.time;
         completionCircle.gameObject.SetActive(true);
+
+        AudioManager.Instance.PlayMusicWithXFade(gameSleepMusic, 0.5f);
     }
 
       public void MovePlayerUp()

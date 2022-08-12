@@ -527,6 +527,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3628735039124855485}
     m_Modifications:
+    - target: {fileID: 2898000759397342083, guid: 8c634ea5427eee44eb7907d34cf1e628, type: 3}
+      propertyPath: letterSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d80006aef1cda714a9ce8ee1eef6358a, type: 3}
     - target: {fileID: 2898000759397342084, guid: 8c634ea5427eee44eb7907d34cf1e628, type: 3}
       propertyPath: m_Size.x
       value: 2.2026582
@@ -841,6 +845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: A
       objectReference: {fileID: 0}
+    - target: {fileID: 7624406773754879003, guid: 38a8aa81ae0f7ac4fa60cac2ecdeeb4d, type: 3}
+      propertyPath: letterSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2330d558a9077e54c94412264b201bfe, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a8aa81ae0f7ac4fa60cac2ecdeeb4d, type: 3}
 --- !u!4 &1611659731754813583 stripped

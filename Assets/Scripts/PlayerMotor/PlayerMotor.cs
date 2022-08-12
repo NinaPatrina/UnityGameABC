@@ -17,7 +17,7 @@ public class PlayerMotor : MonoBehaviour
 
     public CharacterController controller;
     public Animator anim;
-    //public AudioClip hitSound;
+    public AudioClip hitSound;
 
     private BaseState state;
     private bool isPaused;
@@ -125,7 +125,7 @@ public class PlayerMotor : MonoBehaviour
         string hitLayerName = LayerMask.LayerToName(hit.gameObject.layer);
         if (hitLayerName == "Death")
         {
-            //AudioManager.Instance.PlaySFX(hitSound, 0.7f);
+            AudioManager.Instance.PlaySFX(hitSound, 0.7f);
 
             ChangeState(GetComponent<DeathState>());
         }

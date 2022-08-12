@@ -5,6 +5,7 @@ using UnityEngine;
 public class Letter : MonoBehaviour
 {
     private Animator anim;
+    public AudioClip letterSound;
 
     
     private void Start()
@@ -16,6 +17,7 @@ public class Letter : MonoBehaviour
         if (other.tag == "Player")
         {
             PickupLetter();
+            AudioManager.Instance.PlaySFX(letterSound, 0.7f);
         }
     }
     private void PickupLetter()
