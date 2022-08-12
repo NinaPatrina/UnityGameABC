@@ -883,6 +883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7d2315ed4a5404e87a1819bd26507d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splashSound: {fileID: 0}
 --- !u!114 &556382053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,7 +938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 10
-  jumpSound: {fileID: 8300000, guid: 5ce1dabc45c7a0d418818cee0ab60c9d, type: 3}
+  jumpSound: {fileID: 8300000, guid: b96b8214030f2234d8e0373ed492a079, type: 3}
 --- !u!143 &556382057
 CharacterController:
   m_ObjectHideFlags: 0
@@ -995,7 +996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956c2e5441f60b145ae08465e4ac1bb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abcContainer: {fileID: 1023805754}
+  abcContainer: {fileID: 1154357843}
 --- !u!1 &620698391
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,7 +1215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b75936bf86bb154b8c89766de0a6225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameLoopMusic: {fileID: 8300000, guid: 896433ffaedc5094b8c80673ae758abb, type: 3}
+  gameSplashMusic: {fileID: 0}
+  gameLoopMusic: {fileID: 8300000, guid: 1d0919293f9d3f44991295eeed540241, type: 3}
 --- !u!114 &629603014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1718,11 +1720,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 946701718}
---- !u!4 &1023805754 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400042, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
-  m_PrefabInstance: {fileID: 1587326433}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1039143883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,7 +1886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstChunkSpawnPosition: 20
-  _chunkOnScreen: 3
+  _chunkOnScreen: 2
   chunkPrefab:
   - {fileID: 4723051523583675668, guid: 4ba5e4ef96c3ca548988c40cdec31f38, type: 3}
   cameraTransform: {fileID: 1978943559}
@@ -2139,6 +2136,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!4 &1154357843 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: f5fc854fd9a6a454d8f11953b9d0f63b, type: 3}
+  m_PrefabInstance: {fileID: 1587326433}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1195066554
 GameObject:
   m_ObjectHideFlags: 0

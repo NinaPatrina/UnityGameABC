@@ -34,7 +34,7 @@ public class Letter : MonoBehaviour
     }
     public void OnShowChunk()
     {
-        //anim?.SetTrigger("Reappearing");
+        anim?.SetTrigger("Reappearing");
         StartCoroutine(MyCoroutine1());
         Debug.Log("BROADcasting");
 

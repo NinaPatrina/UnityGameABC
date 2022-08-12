@@ -17,7 +17,7 @@ public class GameStateShop : GameState
     //public Image completionCircle;
     //public TextMeshProUGUI completionText;
 
-
+    [SerializeField] private AudioClip shopMusic;
 
     //!!!!!
     protected override void Awake()
@@ -26,20 +26,14 @@ public class GameStateShop : GameState
         abcs = Resources.LoadAll<ABCShop>("ABC");
         PopulateShop();
     }
-
-
-
-
-
     public override void Construct()
     {
         GameManager.Instance.ChangeCamera(GameCamera.Shop);
         //abcs = Resources.LoadAll<ABCShop>("ABC");
         shopUI.SetActive(true);
-      
+        AudioManager.Instance.PlaySFX(shopMusic, 1f);
         //PopulateShop();
-        
-      
+
     }
     public override void Destruct()
     {
