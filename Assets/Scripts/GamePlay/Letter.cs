@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Letter : MonoBehaviour
@@ -23,15 +23,11 @@ public class Letter : MonoBehaviour
     private void PickupLetter()
     {
         StartCoroutine(MyCoroutine());
-        
 
-        //GameStat.Instance.CollectFish();
-
-        //play sound  
     }
     private IEnumerator MyCoroutine()
     {
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(2.5f);
         
         anim?.SetTrigger("Pickup");
         

@@ -9,12 +9,10 @@ public class GameStateInit : GameState
     {
         
         GameManager.Instance.ChangeCamera(GameCamera.Init);
-        //hiscoreText.text ="Highscoer: " + SaveManager.Instance.save.HighScore.ToString();
-        //fishcountText.text = "Fish: " + SaveManager.Instance.save.Fish.ToString();
 
         menuUI.SetActive(true);
 
-        AudioManager.Instance.PlayMusicWithXFade(menuLoopMusic, 0.5f);
+        AudioManager.Instance.PlayMusicWithXFade(menuLoopMusic, 0.2f);
     }
 
     public override void Destruct()
@@ -24,7 +22,6 @@ public class GameStateInit : GameState
     public void OnPlayClick()
     {
         brain.ChangeState(GetComponent<GameStateGame>());
-        //GameStat.Instance.ResetSession();
     }
     public void OnABCClick()
     {

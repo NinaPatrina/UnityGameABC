@@ -27,11 +27,8 @@ public class PlayerMotor : MonoBehaviour
         controller = GetComponent<CharacterController>();
         
         anim = GetComponent<Animator>();
-
-        //state = GetComponent<IdleState>();
-        // !!! i changed to walking because Idle is not implemented yet
-        state = GetComponent<WalkingState>();
-        //state.Construct();
+       
+        state = GetComponent<WalkingState>();     
         isPaused = true;
 
     }
@@ -47,20 +44,17 @@ public class PlayerMotor : MonoBehaviour
         //check if we are grounded
         isGrounded = controller.isGrounded;
 
-        //how should we be moving right now? base on a state
-        
+        //how should we be moving right now? base on a state       
         moveVector = state.ProcessMotion();
         //are we trying to change state?
 
         state.Transition();
-        //feed the animator some values
-        
+        //feed the animator some values       
         anim?.SetBool("IsGrounded", isGrounded);
         anim?.SetFloat("Speed", Mathf.Abs(moveVector.z));
 
         //move the player
         controller.Move(moveVector * Time.deltaTime);
-
     }
 
     public float SnapToLane()
@@ -102,11 +96,12 @@ public class PlayerMotor : MonoBehaviour
     public void PausePlayer()
     {
         isPaused = true;
+        
     }
     public void ResumePlayer()
     {
         isPaused = false;
-        //anim?.SetTrigger("Walk");
+        anim?.SetTrigger("Walk");
 
     }
     public void RespawnPlayer()
@@ -128,14 +123,9 @@ public class PlayerMotor : MonoBehaviour
         if (hitLayerName == "Death")
         {
             AudioManager.Instance.PlaySFX(hitSound, 0.7f);
-
             ChangeState(GetComponent<DeathState>());
         }
     }
-
-
-
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -146,15 +136,8 @@ public class PlayerMotor : MonoBehaviour
     }
     private void PickupLetter()
     {
-        
-
-        //after 3 sec
-        StartCoroutine(MyCoroutine());
-        //GameStat.Instance.CollectFish();
-
-        //play sound  
-
-    }
+          StartCoroutine(MyCoroutine());
+       }
 
     private IEnumerator MyCoroutine()
     {
@@ -165,10 +148,11 @@ public class PlayerMotor : MonoBehaviour
             yield return null;
         }
         PausePlayer();
+        yield return new WaitForSeconds(0.3f);
         anim?.SetTrigger("Success");
         GameManager.Instance.ChangeCamera(GameCamera.Success);
 
-        yield return new WaitForSeconds(1.8f);
+        yield return new WaitForSeconds(4f);
         GameManager.Instance.ChangeCamera(GameCamera.Game);
         ResumePlayer();
     }
