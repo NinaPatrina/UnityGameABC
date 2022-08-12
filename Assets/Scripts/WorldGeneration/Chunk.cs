@@ -6,7 +6,7 @@ public class Chunk : MonoBehaviour
     
     public Chunk ShowChank()
     {
-        transform.gameObject.BroadcastMessage("OnShowChunk", SendMessageOptions.DontRequireReceiver);
+        //transform.gameObject.BroadcastMessage("OnShowChunk", SendMessageOptions.DontRequireReceiver);
         gameObject.SetActive(true);
         return this;
     }

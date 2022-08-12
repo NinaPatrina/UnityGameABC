@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
 
     private AudioSource music1;
     private AudioSource music2;
-    private AudioSource music3;
+    
     private AudioSource sfxSource;
 
     private bool firstMusicSourceActive;
@@ -23,12 +23,12 @@ public class AudioManager : MonoBehaviour
 
         music1 = gameObject.AddComponent<AudioSource>();
         music2 = gameObject.AddComponent<AudioSource>();
-        music3 = gameObject.AddComponent<AudioSource>();
+        
         sfxSource = gameObject.AddComponent<AudioSource>();
 
         music1.loop = true;
         music2.loop = true;
-        music3.loop = true;
+        
     }
     public void PlaySFX(AudioClip clip)
     {

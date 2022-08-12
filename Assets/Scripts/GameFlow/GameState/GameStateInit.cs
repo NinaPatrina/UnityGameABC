@@ -13,7 +13,7 @@ public class GameStateInit : GameState
         menuUI.SetActive(true);
 
         AudioManager.Instance.PlayMusicWithXFade(menuLoopMusic, 0.2f);
-    }
+            }
 
     public override void Destruct()
     {

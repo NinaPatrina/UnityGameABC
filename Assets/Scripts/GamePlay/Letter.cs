@@ -7,7 +7,7 @@ public class Letter : MonoBehaviour
     private Animator anim;
     public AudioClip letterSound;
 
-    
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -28,12 +28,22 @@ public class Letter : MonoBehaviour
     private IEnumerator MyCoroutine()
     {
         yield return new WaitForSeconds(2.5f);
-        
+
         anim?.SetTrigger("Pickup");
-        
-}
+
+    }
     public void OnShowChunk()
     {
-        anim?.SetTrigger("Walk");  
+        //anim?.SetTrigger("Reappearing");
+        StartCoroutine(MyCoroutine1());
+        Debug.Log("BROADcasting");
+
+    }
+    private IEnumerator MyCoroutine1()
+    {
+        yield return new WaitForSeconds(5f);
+
+        anim?.SetTrigger("Walk");
+
     }
 }

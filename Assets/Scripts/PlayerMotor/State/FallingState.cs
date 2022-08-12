@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class FallingState : BaseState
 {
+    public AudioClip splashSound;
     public override void Construct()
     {
         motor.anim?.SetTrigger("Fall");
+        AudioManager.Instance.PlaySFX(splashSound, 0.7f);
     }
     public override Vector3 ProcessMotion()
     {

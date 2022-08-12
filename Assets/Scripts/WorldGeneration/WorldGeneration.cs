@@ -70,6 +70,9 @@ public class WorldGeneration : MonoBehaviour
 
         _activeChunks.Enqueue(chunk);
         chunk.ShowChank();
+
+        chunk.BroadcastMessage("OnShowChunk", SendMessageOptions.DontRequireReceiver);
+
     }
     private void DeleteLastChunk()
     {

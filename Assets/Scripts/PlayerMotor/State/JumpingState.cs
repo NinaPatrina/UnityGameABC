@@ -4,10 +4,12 @@ using UnityEngine;
 public class JumpingState : BaseState
 {
     public float jumpForce = 7.0f;
+    public AudioClip jumpSound;
     public override void Construct()
     {
         motor.verticalVelocity = jumpForce;
         motor.anim?.SetTrigger("Jump");
+        AudioManager.Instance.PlaySFX(jumpSound, 0.7f);
     }
     public override Vector3 ProcessMotion()
     {
