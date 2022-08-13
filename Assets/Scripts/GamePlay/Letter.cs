@@ -17,7 +17,7 @@ public class Letter : MonoBehaviour
         if (other.tag == "Player")
         {
             PickupLetter();
-            AudioManager.Instance.PlaySFX(letterSound, 0.7f);
+            AudioManager.Instance.PlaySFX(letterSound, 1f);
         }
     }
     private void PickupLetter()

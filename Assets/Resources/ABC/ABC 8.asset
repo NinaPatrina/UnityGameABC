@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: 
   Thumbnail: {fileID: 0}
-  Model: {fileID: 0}
+  Model: {fileID: 919132149155446097, guid: 0916f420f7da0df4a9af7ea72b37eaa6, type: 3}
