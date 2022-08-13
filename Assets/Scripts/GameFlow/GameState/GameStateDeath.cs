@@ -38,7 +38,8 @@ public class GameStateDeath : GameState
     public override void UpdateState()
     {
         float ratio = (Time.time - deathTime) / timeToDecision;
-        completionCircle.color = Color.Lerp(Color.green, Color.red, ratio);
+        Color violet = new Color(129, 51, 189);
+        completionCircle.color = Color.Lerp(violet, Color.white, ratio);
         completionCircle.fillAmount = 1 - ratio;
 
         if (ratio > 1)

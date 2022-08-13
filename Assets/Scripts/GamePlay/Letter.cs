@@ -36,8 +36,6 @@ public class Letter : MonoBehaviour
     {
         anim?.SetTrigger("Reappearing");
         StartCoroutine(MyCoroutine1());
-        Debug.Log("BROADcasting");
-
     }
     private IEnumerator MyCoroutine1()
     {

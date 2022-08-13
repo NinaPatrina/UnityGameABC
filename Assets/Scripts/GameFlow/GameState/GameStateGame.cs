@@ -3,7 +3,7 @@ using TMPro;
 
 public class GameStateGame : GameState
 {
-    //public GameObject gameUI;
+    public GameObject gameUI;
     //[SerializeField] private TextMeshProUGUI fishCount;
     //[SerializeField] private TextMeshProUGUI scoreCount;
     [SerializeField] private AudioClip gameSplashMusic;
@@ -21,7 +21,7 @@ public class GameStateGame : GameState
         //GameStat.Instance.OnCollectFish+= OnCollectFish;
         //GameStat.Instance.OnScoreChange += OnScoreChange;
 
-        //gameUI.SetActive(true);
+        gameUI.SetActive(true);
 
         AudioManager.Instance.PlaySFX(gameSplashMusic, 1f);
         AudioManager.Instance.PlayMusicWithXFade(gameLoopMusic, 0.2f);
@@ -37,7 +37,7 @@ public class GameStateGame : GameState
     }
     public override void Destruct()
     {
-        //gameUI.SetActive(false);
+        gameUI.SetActive(false);
 
         //GameStat.Instance.OnCollectFish -= OnCollectFish;
         //GameStat.Instance.OnScoreChange -= OnScoreChange;
