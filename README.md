@@ -10,24 +10,24 @@ The world is bended around the charachter.
 
 The following technologies were used:
 
---Universal Render Pipeline
---Mechanim animator
---ShaderGraph
---Android Build
---Pooling
---The new Input System
---State machine
---CineMachine
---Serialized Save State
+- Universal Render Pipeline
+- Mechanim animator
+- ShaderGraph
+- Android Build
+- Pooling
+- The new Input System
+- State machine
+- CineMachine
+- Serialized Save State
 
 What I learned:
 
---Full development cycle of a Mobile Application/Game
---Game Architecture
---Design patterns
---Practice Object Oriented Programming
---Practice with the Universal Render Pipeline
---New Input System
---ShaderGraph
---State Machine
---Cinemachine
+- Full development cycle of a Mobile Application/Game
+- Game Architecture
+- Design patterns
+- Practice Object Oriented Programming
+- Practice with the Universal Render Pipeline
+- New Input System
+- ShaderGraph
+- State Machine
+- Cinemachine
