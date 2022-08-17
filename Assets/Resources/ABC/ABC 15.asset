@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ABC 15
   m_EditorClassIdentifier: 
   ItemName: 
-  Thumbnail: {fileID: 0}
+  Thumbnail: {fileID: 21300000, guid: 79b96422e833e324ea145f073a814b3e, type: 3}
   Model: {fileID: 1031725724624138671, guid: 5b7e851a767d82a498164d536ad0d477, type: 3}

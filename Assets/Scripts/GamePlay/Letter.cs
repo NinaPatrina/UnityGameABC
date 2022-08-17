@@ -41,7 +41,7 @@ public class Letter : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
 
-        anim?.SetTrigger("Walk");
-
+            anim?.SetTrigger("Walk");
+        
     }
 }

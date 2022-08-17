@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8884a1bf33278b24ea321e3455bd13e5, type: 3}
+  m_Name: ABC 39
+  m_EditorClassIdentifier: 
+  ItemName: 
+  Thumbnail: {fileID: 21300000, guid: b0ac89e1e41e8784baa816de981d86d5, type: 3}
+  Model: {fileID: 3695784774401473990, guid: 10a6f5387df2dce45ac2235bda940256, type: 3}

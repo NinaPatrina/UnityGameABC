@@ -9,6 +9,8 @@ public class PlayerMotor : MonoBehaviour
     [HideInInspector] public bool isGrounded;
     [HideInInspector] public int currentLane;
 
+    public GameObject menuUI1;
+
     public float distanceInBetweenLanes = 5.0f;
     public float baseRunSpeed = 2.0f;
     public float baseSideWaySpeed = 10.0f;
@@ -96,12 +98,14 @@ public class PlayerMotor : MonoBehaviour
     public void PausePlayer()
     {
         isPaused = true;
-        
+        //anim?.SetFloat("Speed", 0);
+
     }
     public void ResumePlayer()
     {
         isPaused = false;
         anim?.SetTrigger("Walk");
+        //anim?.SetFloat("Speed", Mathf.Abs(moveVector.z));
 
     }
     public void RespawnPlayer()
@@ -153,7 +157,11 @@ public class PlayerMotor : MonoBehaviour
         GameManager.Instance.ChangeCamera(GameCamera.Success);
 
         yield return new WaitForSeconds(4f);
+
+        //if there is not menuUI1 on the screen when resume the player otherwise speed is 0
+        if (menuUI1?.activeSelf == false) { 
         GameManager.Instance.ChangeCamera(GameCamera.Game);
         ResumePlayer();
+        }
     }
 }

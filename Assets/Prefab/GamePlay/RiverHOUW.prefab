@@ -66,21 +66,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: U
       objectReference: {fileID: 0}
+    - target: {fileID: 100138, guid: 51fc42f9efe172c44b66c4716cc4b665, type: 3}
+      propertyPath: m_TagString
+      value: Letter
+      objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: 51fc42f9efe172c44b66c4716cc4b665, type: 3}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: 51fc42f9efe172c44b66c4716cc4b665, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: 51fc42f9efe172c44b66c4716cc4b665, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: 51fc42f9efe172c44b66c4716cc4b665, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: 51fc42f9efe172c44b66c4716cc4b665, type: 3}
       propertyPath: m_LocalPosition.x
@@ -88,7 +92,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: 51fc42f9efe172c44b66c4716cc4b665, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: 51fc42f9efe172c44b66c4716cc4b665, type: 3}
       propertyPath: m_LocalPosition.z
@@ -122,6 +126,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 51fc42f9efe172c44b66c4716cc4b665, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3aec4685ad3791444becd049c5d85188, type: 2}
     - target: {fileID: 13700000, guid: 51fc42f9efe172c44b66c4716cc4b665, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -163,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a76a88e31e208348b4f63909b5cfef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterSound: {fileID: 0}
+  letterSound: {fileID: 8300000, guid: 715d0b4123c7e1f42a41aa551353979c, type: 3}
 --- !u!1001 &1652334148781416798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -175,21 +183,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: O
       objectReference: {fileID: 0}
+    - target: {fileID: 100130, guid: c81f5ac6e36dd654a895611cafefe2ea, type: 3}
+      propertyPath: m_TagString
+      value: Letter
+      objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: c81f5ac6e36dd654a895611cafefe2ea, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: c81f5ac6e36dd654a895611cafefe2ea, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: c81f5ac6e36dd654a895611cafefe2ea, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: c81f5ac6e36dd654a895611cafefe2ea, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: c81f5ac6e36dd654a895611cafefe2ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -197,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: c81f5ac6e36dd654a895611cafefe2ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: c81f5ac6e36dd654a895611cafefe2ea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -231,6 +243,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: c81f5ac6e36dd654a895611cafefe2ea, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7dbc3c1506f83d742a8d4094ca5828fe, type: 2}
     - target: {fileID: 13700000, guid: c81f5ac6e36dd654a895611cafefe2ea, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -272,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a76a88e31e208348b4f63909b5cfef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterSound: {fileID: 0}
+  letterSound: {fileID: 8300000, guid: ae5551446e4fabe42b43ea5c5ce6bf8f, type: 3}
 --- !u!1001 &1928600031565468225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -350,21 +366,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: W
       objectReference: {fileID: 0}
+    - target: {fileID: 100136, guid: df8e95cca2b5173408fa5d09449156c3, type: 3}
+      propertyPath: m_TagString
+      value: Letter
+      objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: df8e95cca2b5173408fa5d09449156c3, type: 3}
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: df8e95cca2b5173408fa5d09449156c3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: df8e95cca2b5173408fa5d09449156c3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: df8e95cca2b5173408fa5d09449156c3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: df8e95cca2b5173408fa5d09449156c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -372,7 +392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: df8e95cca2b5173408fa5d09449156c3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: df8e95cca2b5173408fa5d09449156c3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -406,6 +426,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: df8e95cca2b5173408fa5d09449156c3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 88fe46869e0730f4584f6cd5cd33095b, type: 2}
     - target: {fileID: 13700000, guid: df8e95cca2b5173408fa5d09449156c3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -447,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a76a88e31e208348b4f63909b5cfef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterSound: {fileID: 0}
+  letterSound: {fileID: 8300000, guid: 5fbf2b602dcc7554ebbbdb3cad1cf30a, type: 3}
 --- !u!1001 &2786047726203562931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -889,21 +913,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: H
       objectReference: {fileID: 0}
+    - target: {fileID: 100076, guid: 5cd39a571772bd84bbcb2e4d18d9b564, type: 3}
+      propertyPath: m_TagString
+      value: Letter
+      objectReference: {fileID: 0}
     - target: {fileID: 400076, guid: 5cd39a571772bd84bbcb2e4d18d9b564, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400076, guid: 5cd39a571772bd84bbcb2e4d18d9b564, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400076, guid: 5cd39a571772bd84bbcb2e4d18d9b564, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400076, guid: 5cd39a571772bd84bbcb2e4d18d9b564, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400076, guid: 5cd39a571772bd84bbcb2e4d18d9b564, type: 3}
       propertyPath: m_LocalPosition.x
@@ -911,7 +939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400076, guid: 5cd39a571772bd84bbcb2e4d18d9b564, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 400076, guid: 5cd39a571772bd84bbcb2e4d18d9b564, type: 3}
       propertyPath: m_LocalPosition.z
@@ -945,6 +973,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5cd39a571772bd84bbcb2e4d18d9b564, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1fc9b9787caf74447b2fd06c91e17fa1, type: 2}
     - target: {fileID: 13700000, guid: 5cd39a571772bd84bbcb2e4d18d9b564, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -986,4 +1018,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a76a88e31e208348b4f63909b5cfef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterSound: {fileID: 0}
+  letterSound: {fileID: 8300000, guid: d20e96d0b3a92b7418875f67833b2a10, type: 3}

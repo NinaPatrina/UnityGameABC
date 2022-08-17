@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ABC 2
   m_EditorClassIdentifier: 
   ItemName: BigHorned
-  Thumbnail: {fileID: 21300000, guid: 873f21ad0011e4a479a237580e5125ef, type: 3}
+  Thumbnail: {fileID: 21300000, guid: 8c1a96398ea08444d9e79da4f5eeee28, type: 3}
   Model: {fileID: 5530683819648364146, guid: bb40fe8e0eb90114c800fb08e0946863, type: 3}

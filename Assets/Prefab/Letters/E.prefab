@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 3695976921716476526}
   m_Layer: 0
   m_Name: E
-  m_TagString: Untagged
+  m_TagString: Letter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a76a88e31e208348b4f63909b5cfef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterSound: {fileID: 0}
+  letterSound: {fileID: 8300000, guid: 885932db0fc380a4bacc9c0e247d3cb9, type: 3}
 --- !u!1 &5620039684558084586
 GameObject:
   m_ObjectHideFlags: 0

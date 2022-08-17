@@ -4,6 +4,8 @@ using TMPro;
 public class GameStateDeath : GameState
 {
     public GameObject deathUI;
+    public Animator anim;
+
 
     [SerializeField] private AudioClip gameSleepMusic;
 
@@ -59,6 +61,8 @@ public class GameStateDeath : GameState
         GameManager.Instance.worldGeneration.ResetWorld();
         GameManager.Instance.sceneChunkGeneration.ResetWorld();
         GameManager.Instance.waterGenerationon.ResetWorld();
-        
+        anim?.SetFloat("Speed", 0);
+
+
     }
 }
